@@ -96,7 +96,7 @@ export default function App() {
             {advice || "Loading advice..."}
           </h1>
           <button
-            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition duration-300"
+            className="bg-indigo-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition duration-300"
             onClick={getAdvice}
           >
             Get New Advice!
