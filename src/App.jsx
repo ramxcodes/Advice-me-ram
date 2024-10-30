@@ -73,26 +73,30 @@ export default function App() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 items-center">
-      <h1 className="text-6xl font-bold mt-12 font-mono hover:font-serif">Advice Me :)</h1>
-      <p className="text-lg text-gray-600 mb-8 font-mono">Shhh… listen, I&apos;ve got something for you.</p>
+    <div className="flex flex-col min-h-screen bg-gray-100 items-center px-4">
+      <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mt-12 font-mono hover:font-serif text-center">
+        Advice Me :)
+      </h1>
+      <p className="text-base md:text-lg lg:text-xl text-gray-600 mb-8 font-mono text-center">
+        Shhh… listen, I&apos;ve got something for you.
+      </p>
 
       <main className="flex-grow flex items-center justify-center w-full">
         <div
           ref={cardRef}
-          className="bg-white p-8 rounded-lg shadow-lg text-center w-3/4 md:w-1/2 lg:w-1/3 relative"
+          className="bg-white p-6 sm:p-8 rounded-lg shadow-lg text-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 relative"
         >
           <div className="absolute -top-16 left-1/2 transform -translate-x-1/2">
             {profileImage && (
               <img
                 src={profileImage}
                 alt="Profile"
-                className="w-32 h-32 rounded-full border-4 border-white shadow-md"
+                className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-white shadow-md"
               />
             )}
           </div>
 
-          <h1 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-800 mt-16 font-mono">
+          <h1 className="text-lg sm:text-2xl md:text-3xl font-semibold mb-4 text-gray-800 mt-16 font-mono">
             {advice || "Loading advice..."}
           </h1>
           <button
@@ -103,8 +107,8 @@ export default function App() {
           </button>
           <Message count={count} />
 
-          <div className="flex justify-between items-center mt-4">
-            <div className="flex space-x-4">
+          <div className="flex justify-between items-center mt-4 flex-wrap">
+            <div className="flex space-x-4 mb-2 sm:mb-0">
               <button
                 className="text-blue-700 hover:text-blue-800"
                 onClick={() => captureAndShare("linkedin")}
@@ -125,8 +129,8 @@ export default function App() {
               </button>
             </div>
 
-            <div className="text-gray-700 text-sm font-mono">
-              Made with 💖 by{" "}
+            <div className="text-gray-700 text-sm font-mono mt-2 sm:mt-0">
+              Made with ❤️ by{" "}
               <a
                 href="https://github.com/ramxcodes"
                 className="font-bold text-blue-500 hover:text-blue-700"
