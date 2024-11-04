@@ -2,7 +2,7 @@
 
 Welcome to **Advice Me**! This is a full-stack MERN web application designed to provide insightful advice on various topics. Whether you’re looking for motivational quotes, life advice, or just some daily wisdom, **Advice Me** has you covered! 🌟
 
-![App Preview](https://raw.githubusercontent.com/ramxcodes/Advice-me/refs/heads/main/public/preview.png)
+![App Preview](https://raw.githubusercontent.com/ramxcodes/Advice-me-ram/refs/heads/main/public/preview.png)
 
 ## About the Project 📖
 
